@@ -15,6 +15,7 @@ class DatabaseSeeder extends Seeder {
 		Model::unguard();
 
 		// $this->call('UserTableSeeder');
+        $this->call('PageTableSeeder'); //指向PageTableSeeder中run()函数 ，从而执行了循环，添加了数据
 	}
 
 }
